@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Link < ApplicationRecord
-  VALID_URL_REGEX = /https?:\/\/\w+\.\w{2,}\//i
+  VALID_URL_REGEX = %r{https?://\w+\.\w{2,}/}i.freeze
 
   has_many :comments
   belongs_to :user
