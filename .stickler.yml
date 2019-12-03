@@ -1,7 +1,7 @@
 linters:
   rubocop:
     display_cop_names: true
-    config: './rubocop.yml'
+    config: './.rubocop.yml'
     fixer: true
 
   files:
