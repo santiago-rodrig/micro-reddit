@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_03_170028) do
+ActiveRecord::Schema.define(version: 2019_12_03_171412) do
 
   create_table "comments", force: :cascade do |t|
     t.integer "link_id", null: false
-    t.integer "comment_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id", default: 1, null: false
     t.text "body"
+    t.integer "comment_id"
     t.index ["comment_id"], name: "index_comments_on_comment_id"
     t.index ["link_id"], name: "index_comments_on_link_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
@@ -41,7 +41,6 @@ ActiveRecord::Schema.define(version: 2019_12_03_170028) do
     t.string "email"
   end
 
-  add_foreign_key "comments", "comments"
   add_foreign_key "comments", "links"
   add_foreign_key "comments", "users"
   add_foreign_key "links", "users"
