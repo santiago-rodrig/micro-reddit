@@ -7,8 +7,8 @@ linters:
 files:
   ignore:
     - "bin/*"
-    - "db/**/*"
-    - "config/**/*"
+    - "db/*"
+    - "config/*"
     - "Guardfile"
     - "Rakefile"
-    - "node_modules/**/*"
+    - "node_modules/*"
