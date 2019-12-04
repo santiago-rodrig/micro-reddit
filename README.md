@@ -14,11 +14,11 @@ These instructions will help you get started with the project up and running on 
 
 ### What you need:
 
-- Ruby 2.6.5
-- Rails 6.0.1
-- Yarn 1.19.2
-- bundler 2.0.2
-- sqlite3 3.27.2
+- `ruby` 2.6.5
+- `rails` 6.0.1
+- `yarn` 1.19.2
+- `bundler` 2.0.2
+- `sqlite3` 3.27.2
 
 
 ## Testing the models
