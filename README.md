@@ -18,6 +18,7 @@ These instructions will help you get started with the project up and running on 
 - Rails 6.0.1
 - Yarn 1.19.2
 - bundler 2.0.2
+- sqlite3 3.27.2
 
 
 ## Testing the models
@@ -26,7 +27,7 @@ Since the model instances have been created and the database populated, you can 
 
 - First log in to the console by doing > rails c.
 
-- Using User model as an example, do > User.all to check if there's some data for the model. This shoul return an array of the model's intances.
+- Using User model as an example, do > User.all to check if there's some data for the model. This should return an array of the model's intances.
 
 - To get the first association between users and comments, do > User.first.comments
 
